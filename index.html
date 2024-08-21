@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aflamy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+   
+      <div class="header">
+        <div id="siteName">
+          <div>logo</div>
+          <div>Aflamy</div>
+        </div>
+        <div class="lists">
+          <div class="mainPage"><button>Main</button></div>
+          <div class="moviesList">
+            <button id="movieBtn">Movies</button>
+            <div id="movieOption">
+              <a href="#action">Action</a> <a href="#comedy">Comedy</a
+              ><a href="#romance">Romance</a>
+            </div>
+          </div>
+          <div class="seriesList">
+            <button id="seriesBtn">Series</button>
+        </div>
+          <div class="favoritList"> 
+            <button id="FavBtn">Favorite list</button>
+        </div>
+        </div>
+        <div class="icones">
+            <div class="search-container">
+                  <input type="text" placeholder="Search.." name="search"  id="myInput">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+          <div ><button id="night">Dark Mode</button></div>
+        </div>
+      </div>
+      <div class="pageContent">
+      <div class="newest"></div>
+      <div class="Action">ACtion</div>
+      <div class="comedy">comedy</div>
+      <div class="footer">footer</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

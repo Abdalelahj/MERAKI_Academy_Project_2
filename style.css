@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    background-color: blueviolet;
+    height: 15vh;
+    padding: 20px;
+}
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+}
+#siteName{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.icones{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 10px;
+    /* justify-content: space-between; */
+}
+.newest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* background-color: aqua; */
+    height: 45vh;
+    z-index: 1;
+}
+.Action{
+    background-color: blue;
+    height: 30vh;
+
+}
+.comedy{
+    background-color:rgb(195, 34, 34);
+    height: 30vh;
+}
+.footer{
+    background-color: cadetblue;
+    height: 10vh;
+
+}
+.moviesList{
+    position: relative;
+    display: inline-block;
+}
+#movieBtn{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 85px;
+}
+#movieBtn:hover, #movieBtn:focus {
+    background-color: #2980B9;
+  }
+#movieOption{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    /* gap: 5px; */
+    background-color:#f1f1f1;
+    width: 85px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    /* background: none; */
+}
+#movieOption a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.seriesList{
+  position: relative;
+  display: inline-block;
+   
+}
+#seriesBtn{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    width: 85px;
+
+
+}
+#seriesBtn:hover, #seriesBtn:focus {
+    background-color: #2980B9;
+  }
+#seriesLi{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 85px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#seriesLi a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:initial;
+    z-index: 1;
+}
+#FavBtn{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+}
+#FavBtn:hover, #FavBtn:focus {
+    background-color: #2980B9;
+  }
+.mainPage button{
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    width: 85px; 
+}
+.mainPage button:hover, .mainPage button:focus {
+    background-color: #2980B9;
+  }
+  #poster1{
+display: grid;
+grid-template-rows: 1fr ;
+padding: 5px;
+}
+#poster1 button{
+    width: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    color: #ebeff1;
+}
+.common p {
+    background-color: rgba(0, 0, 0, 0.567);
+    color: #f1f1f1;
+    align-self: flex-end;
+    display: none;
+}
+#poster1 button:hover{
+    color: rgb(28, 30, 30);
+    font-weight: 600;
+}
+  #poster2{
+display: grid;
+grid-template-rows: 1fr ;
+padding: 5px;
+}
+  #poster3{
+display: grid;
+grid-template-rows: 1fr ;
+padding: 5px;
+}
+  #poster4{
+display: grid;
+grid-template-rows: 1fr ;
+padding: 5px;
+}
+.darkMode{
+   background-color: rgb(39, 37, 37);
+font-size:18px;
+color: #ebeff1;
+ 
+}
+.icones .search-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    background: #ddd;
+    height: 30px;
+    font-size:15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=text] {
+    padding: 6px;
+    font-size: 15px;
+    width: 125px;
+    height: 30px;
+    border: none;
+  }
+  .search-container button:hover {
+    background: #ccc;
+  }
+  
