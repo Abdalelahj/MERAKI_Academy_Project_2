@@ -219,5 +219,21 @@ color: #ebeff1;
   }
   .search-container button:hover {
     background: #ccc;
-  }
+}
   
+#Result{
+display: none; 
+   height: 90vh;
+}
+#newDiv{
+    height: 40vh;
+}
+#Result{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.common_1{
+    text-align: start;
+align-content: end;
+color: #ddd;
+}
