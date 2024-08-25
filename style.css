@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-.header{
+ .header{
     display: grid;
     grid-template-columns: 0.5fr 3fr 1fr;
-    background-color: blueviolet;
-    height: 15vh;
-    padding: 20px;
-}
+    background-color: #e1dcdc;
+    height: 10vh;
+    padding: 10px;
+} 
 .lists{
     display: flex;
     justify-content: space-evenly;
@@ -18,31 +18,38 @@
 #siteName{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 .icones{
     display: flex;
     flex-direction: column;
     align-items: end;
     padding-right: 10px;
-    /* justify-content: space-between; */
 }
 .newest{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* background-color: aqua; */
-    height: 45vh;
-    z-index: 1;
-}
+    width:1380px;
+    height: 550px;
+    overflow: hidden;
+  }
+  .newest .slides{
+      display: block;
+      width: 14000px;
+      height:600px;
+      margin: 0;
+      padding: 0;
+  }
+  .newest .common{
+      float: left;
+      list-style-type: none;
+      width: 450px;
+      height: 600px;
+  }  
+
 .Action{
     background-color: blue;
     height: 30vh;
 
 }
-.comedy{
-    background-color:rgb(195, 34, 34);
-    height: 30vh;
-}
+
 .footer{
     background-color: cadetblue;
     height: 10vh;
@@ -74,14 +81,17 @@
     width: 85px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
-    /* background: none; */
+    cursor: pointer;
+    z-index: 1;
 }
-#movieOption a{
+#movieOption div{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+}
+#movieOption div:active{
+    background-color:rgb(113, 116, 111);
 }
 .seriesList{
   position: relative;
@@ -96,7 +106,6 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    z-index: 1;
     width: 85px;
 
 
@@ -111,14 +120,19 @@
     width: 85px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index:1;
+    cursor: pointer;
 }
-#seriesLi a{
+
+#seriesLi div{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display:initial;
     z-index: 1;
+}
+#seriesLi div:active{
+    background-color:rgb(113, 116, 111);
 }
 #FavBtn{
     background-color: #3498DB;
@@ -147,12 +161,12 @@
 .mainPage button:hover, .mainPage button:focus {
     background-color: #2980B9;
   }
-  #poster1{
+  /* #poster1{
 display: grid;
 grid-template-rows: 1fr ;
 padding: 5px;
-}
-#poster1 button{
+} */
+/* #poster1 button{
     width: 20px;
     background: none;
     border: none;
@@ -162,14 +176,16 @@ padding: 5px;
     border-radius: 5px;
     z-index: 1;
     color: #ebeff1;
-}
-.common p {
-    background-color: rgba(0, 0, 0, 0.567);
+} */
+  p {
+    background-color: rgba(0, 0, 0, 0.878);
     color: #f1f1f1;
     align-self: flex-end;
-    display: none;
+    /* display: none; */
+    font-size: 25px;
 }
-#poster1 button:hover{
+
+/* #poster1 button:hover{
     color: rgb(28, 30, 30);
     font-weight: 600;
 }
@@ -187,7 +203,7 @@ padding: 5px;
 display: grid;
 grid-template-rows: 1fr ;
 padding: 5px;
-}
+} */
 .darkMode{
    background-color: rgb(39, 37, 37);
 font-size:18px;
@@ -221,19 +237,185 @@ color: #ebeff1;
     background: #ccc;
 }
   
+  
 #Result{
-display: none; 
-   height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: center;
+padding: 20px;
+text-align: center;
+font-size: 35px;
+width: 100%;
 }
 #newDiv{
     height: 40vh;
 }
-#Result{
+
+
+#resultItem{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+    /* width:100vh; */
+    text-align: center;
+    align-content: end;
+    /* font-size: 25px; */
+    /* color:rgb(0, 246, 53); */
+padding: 10px;
+}
+#item2{
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+}
+#subItem2_1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: end;
+    align-items: end;
+    gap: 2px;
+
+}
+#subItem2_1_1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+    border: solid 1px gray;
+    box-shadow: 1px 1px 2px;
+    height: 250px;
+
+}
+
+#subItem2_1_2{
+    border: solid 1px gray;
+    padding: 1px;
+    box-shadow: 1px 1px 2px;
+}
+#subItem2_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+    align-self: center;
+    text-align: start;
+}
+#subItem2_2_1{
+    display: flex;
+    padding:20px;
+    font-size: 45px;
+    align-self: flex-end;
+}
+#item{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
+    height: 400px;
+    justify-content: space-evenly;
+    border: solid 1px gray;
+    padding: 20px;
+    box-shadow: 1px 1px 2px;
+}
+
+/*  */
+#subItem2_2_2>* {
+font-size:90px;
+color:"black";
+cursor: pointer;
+background-color: white;
+border: none;
+}
+#subItem2_2_2 #favDiv {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-start; 
+    }
+#subItem2_2_2 #favBtn {
+    display: flex;
+    font-size:15px;
+    color:#3498DB;
+    cursor: pointer;
+    justify-content: center;
+    border: none;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    background: none;
+    }
+    
+    
+.tralier{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    align-self: center;
+    padding: 5px;
+}
+.tralier h4{
+font-size: 30px;
+font-weight: 400;
+}
+#playTrailer{
+    display: flex;
+    font-size:40px;
+    color:"black";
+    cursor: pointer;
+    background-color: white;
+    border: none;
+}
+#text{
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+#playTrailer a:link ,#playTrailer a:visited{
+ color: rgb(84, 100, 68);
+ background-color: transparent;
+ text-decoration: none;
+}
+#actionMovies{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;   
+    gap: 5px;
+}
+.collection{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+      font-size: 35px;   
+      gap: 5px;
 }
-.common_1{
-    text-align: start;
-align-content: end;
-color: #ddd;
+#resultItem{
+    gap: 2px;
+}
+#favLi{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-row: 1fr 5fr;
+justify-content: center;
+padding: 20px;
+text-align: center;
+font-size: 35px;
+width: 100%;
+}
+#favItems{
+    display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-row: 1fr 5fr; */
+justify-content: center;
+padding: 20px;
+text-align: center;
+font-size: 35px;
+width: 100%;
+gap: 5px;
+}
+#deleteDiv{
+    display: flex;
+}
+#deleteDiv button {
+    color: red;
 }
