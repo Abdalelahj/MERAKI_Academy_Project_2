@@ -4,16 +4,32 @@
     box-sizing: border-box;
 }
 
+  
+
+
  .header{
     display: grid;
-    grid-template-columns: 0.5fr 3fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 2fr 1fr;
     background-color: #e1dcdc;
     height: 10vh;
     padding: 10px;
 } 
+#login>p{
+    font-size: 17px;
+    color: #111213;
+   background: none; 
+   border: none;
+   width:45px;
+   cursor: pointer;
+}
+#login p:hover {
+font-size: 18px;
+font-weight: 600;
+}
 .lists{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    gap: 4px;
 }
 #siteName{
     display: flex;
@@ -32,23 +48,19 @@
   }
   .newest .slides{
       display: block;
-      width: 14000px;
-      height:600px;
+      width:10000px;
+      height:400px;
       margin: 0;
       padding: 0;
   }
   .newest .common{
       float: left;
       list-style-type: none;
-      width: 450px;
-      height: 600px;
+      width:1380px;
+      height: 550px;
   }  
 
-.Action{
-    background-color: blue;
-    height: 30vh;
 
-}
 
 .footer{
     background-color: cadetblue;
@@ -60,14 +72,14 @@
     display: inline-block;
 }
 #movieBtn{
-    background-color: #3498DB;
-    color: white;
+    /* background-color: #3498DB; */
+    color: rgb(12, 11, 11);
     padding: 16px;
     font-size: 12px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 85px;
+    width: 88px;
 }
 #movieBtn:hover, #movieBtn:focus {
     background-color: #2980B9;
@@ -99,8 +111,7 @@
    
 }
 #seriesBtn{
-    background-color: #3498DB;
-    color: white;
+    color: rgb(31, 28, 28);
     padding: 16px;
     font-size: 12px;
     border: none;
@@ -161,22 +172,7 @@
 .mainPage button:hover, .mainPage button:focus {
     background-color: #2980B9;
   }
-  /* #poster1{
-display: grid;
-grid-template-rows: 1fr ;
-padding: 5px;
-} */
-/* #poster1 button{
-    width: 20px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 1;
-    color: #ebeff1;
-} */
+
   p {
     background-color: rgba(0, 0, 0, 0.878);
     color: #f1f1f1;
@@ -185,25 +181,7 @@ padding: 5px;
     font-size: 25px;
 }
 
-/* #poster1 button:hover{
-    color: rgb(28, 30, 30);
-    font-weight: 600;
-}
-  #poster2{
-display: grid;
-grid-template-rows: 1fr ;
-padding: 5px;
-}
-  #poster3{
-display: grid;
-grid-template-rows: 1fr ;
-padding: 5px;
-}
-  #poster4{
-display: grid;
-grid-template-rows: 1fr ;
-padding: 5px;
-} */
+
 .darkMode{
    background-color: rgb(39, 37, 37);
 font-size:18px;
@@ -256,12 +234,9 @@ width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
     height: 100%;
-    /* width:100vh; */
     text-align: center;
     align-content: end;
-    /* font-size: 25px; */
-    /* color:rgb(0, 246, 53); */
-padding: 10px;
+    padding: 10px;
 }
 #item2{
     display: grid;
@@ -307,7 +282,6 @@ padding: 10px;
 #item{
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
     height: 400px;
     justify-content: space-evenly;
     border: solid 1px gray;
@@ -315,7 +289,6 @@ padding: 10px;
     box-shadow: 1px 1px 2px;
 }
 
-/*  */
 #subItem2_2_2>* {
 font-size:90px;
 color:"black";
@@ -394,7 +367,6 @@ font-weight: 400;
 }
 #favLi{
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-row: 1fr 5fr;
 justify-content: center;
 padding: 20px;
@@ -419,3 +391,113 @@ gap: 5px;
 #deleteDiv button {
     color: red;
 }
+#form{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+ #formContainer {
+    border: 3px solid #f1f1f1;
+    width: 70%;
+    height: 100%;
+}
+
+#formContainer button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+#formContainer button:hover {
+  opacity: 0.8;
+}
+
+.container>.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  } 
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content p{
+    background-color: #fefefe;
+    color: #000;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    /* font-weight: 100; */
+    width: 70%;
+    height: 13%;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
